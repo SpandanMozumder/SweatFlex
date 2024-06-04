@@ -7,13 +7,13 @@ import BodyPart from './pages/BodyPart'
 import Equipment from './pages/Equipment'
 import Target from './pages/Target'
 import Navbar from './components/Navbar'
+import { ThemeProvider } from './contexts/theme-context'
 
 const App = () => {
   return (
+    <ThemeProvider>
     <BrowserRouter>
-    
     <Navbar />
-
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/home' element={<Home />} />
@@ -24,6 +24,7 @@ const App = () => {
       <Route path='/target' element={<Target />} />      
     </Routes>
     </BrowserRouter>
+    </ThemeProvider>
   )
 }
 
