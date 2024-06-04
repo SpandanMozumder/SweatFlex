@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 const Equipment = () => {
   return (
-    <div>Equipment</div>
+    <div className="flex flex-row">
+      <Navbar />
+      </div>
   )
 }
 

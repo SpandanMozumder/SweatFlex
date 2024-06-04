@@ -7,7 +7,7 @@ const Navbar = () => {
     const { theme, toggleTheme } = useTheme();
 
     return (
-        <nav className="p-5 h-[100vh] w-[6rem] bg-gray-200 rounded-r-xl border border-gray-500 shadow-gray-400 shadow-lg">
+        <nav className="p-5 h-[100vh] w-[6rem] bg-gray-200 rounded-r-xl border border-gray-500 shadow-gray-400 shadow-lg fixed">
             <div className="flex flex-col gap-10">
                 <Tooltip label="Home"  >
                     <Link to="/home">

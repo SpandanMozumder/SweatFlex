@@ -2,13 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import HeroImg from "../assets/banner.png";
 import { Link } from "react-router-dom";
+import Background from "../components/Background";
 
 const Home = () => {
   return (
     <div className="flex flex-row">
       <Navbar />
 
-      <div className="flex flex-row w-full">
+      <div className="flex flex-row w-full ml-[5rem]">
         <div className="w-[61%] p-10">
           <h1 className="text-bold text-red-600 text-7xl m-5">SweatFlex</h1>
           <h1 className="text-semibold text-4xl m-5">
@@ -51,6 +52,8 @@ const Home = () => {
           <img src={HeroImg} alt="hero" className="w-[32rem] mt-5" />
         </div>
       </div>
+
+      <Background />
     </div>
   );
 };
